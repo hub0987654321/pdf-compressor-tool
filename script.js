@@ -19,3 +19,8 @@ function compressPDF() {
         downloadLink.download = "compressed.pdf";
     }, 2000);
 }
+async function compressWithAPI() {
+    const ILovePDF = await import('https://cdn.jsdelivr.net/npm/@ilovepdf/ilovepdf-js/dist/ilovepdf.min.js');
+    const instance = new ILovePDF.default('project_public_611d13764dcbadc84f1e592b08f3d906_vASt658ad6762ad8743fccd2480eb877a05cey');
+    // API कॉल का कोड यहां जोड़ें
+}
